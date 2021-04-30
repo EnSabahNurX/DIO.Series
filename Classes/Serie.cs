@@ -38,5 +38,9 @@ namespace DIO.Series
         {
             return this.Id;
         }
+        public void Delete()
+        {
+            this.Excluded = true;
+        }
     }
 }

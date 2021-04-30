@@ -8,7 +8,7 @@ namespace DIO.Series
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            // Serie myclass = new Serie();
+
         }
     }
 }

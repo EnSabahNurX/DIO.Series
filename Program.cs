@@ -1,4 +1,5 @@
 ﻿using System;
+// using DIO.Series.Classes;
 
 namespace DIO.Series
 {
@@ -7,6 +8,7 @@ namespace DIO.Series
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            EntityBase myclass = new EntityBase();
         }
     }
 }

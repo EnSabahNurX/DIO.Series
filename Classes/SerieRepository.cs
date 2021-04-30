@@ -45,7 +45,7 @@ using DIO.Series.Interfaces;
 
 namespace DIO.Series
 {
-    public class SerieRepositorio : IRepository<Serie>
+    public class SerieRepository : IRepository<Serie>
     {
         private List<Serie> serieList = new List<Serie>();
         public void Update(int id, Serie obj)
@@ -55,7 +55,7 @@ namespace DIO.Series
 
         public void Delete(int id)
         {
-            serieList[id].Delete();
+            serieList[id].Exclude();
         }
 
         public void Add(Serie obj)

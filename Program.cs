@@ -70,16 +70,16 @@ namespace DIO.Series
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genre), i));
             }
-            Console.Write("Digite o gênero entre as opções acima: ");
+            Console.Write("Select the category between the options above: ");
             int genreEntry = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o Título da Série: ");
+            Console.Write("Inform the Serie Title: ");
             string titleEntry = Console.ReadLine();
 
-            Console.Write("Digite o Ano de Início da Série: ");
+            Console.Write("Inform the Serie release year ");
             int yearEntry = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite a Descrição da Série: ");
+            Console.Write("Inform the Serie description: ");
             string descriptionEntry = Console.ReadLine();
 
             Serie updateSerie = new Serie(id: serieIndex,
@@ -112,33 +112,31 @@ namespace DIO.Series
 
         private static void AddSerie()
         {
-            Console.WriteLine("Inserir nova série");
+            Console.WriteLine("Add a new serie");
 
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
-            foreach (int i in Enum.GetValues(typeof(Genero)))
+            foreach (int i in Enum.GetValues(typeof(Genre)))
             {
-                Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
+                Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genre), i));
             }
-            Console.Write("Digite o gênero entre as opções acima: ");
-            int entradaGenero = int.Parse(Console.ReadLine());
+            Console.Write("Select the category between the options above: ");
+            int genryEntry = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite o Título da Série: ");
-            string entradaTitulo = Console.ReadLine();
+            Console.Write("Inform the Serie Title: ");
+            string titleEntry = Console.ReadLine();
 
-            Console.Write("Digite o Ano de Início da Série: ");
-            int entradaAno = int.Parse(Console.ReadLine());
+            Console.Write("Inform the Serie release year: ");
+            int yearEntry = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite a Descrição da Série: ");
-            string entradaDescricao = Console.ReadLine();
+            Console.Write("Inform the Serie description: ");
+            string descriptionEntry = Console.ReadLine();
 
-            Serie novaSerie = new Serie(id: repository.ProximoId(),
-                                        genero: (Genero)entradaGenero,
-                                        titulo: entradaTitulo,
-                                        ano: entradaAno,
-                                        descricao: entradaDescricao);
+            Serie newSerie = new Serie(id: repository.NextId(),
+                                        genre: (Genre)genryEntry,
+                                        title: titleEntry,
+                                        year: yearEntry,
+                                        description: descriptionEntry);
 
-            repository.Insere(novaSerie);
+            repository.Add(newSerie);
         }
 
         private static string GetUserOpt()

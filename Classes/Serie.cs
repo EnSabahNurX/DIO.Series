@@ -1,3 +1,5 @@
+using System;
+
 namespace DIO.Series
 {
     public class Serie : EntityBase
@@ -17,6 +19,24 @@ namespace DIO.Series
             this.Description = description;
             this.Year = year;
             this.Excluded = false;
+        }
+        public override string ToString()
+        {
+            string text = "";
+            text += "Genre: " + this.Genre + Environment.NewLine;
+            text += "Title: " + this.Title + Environment.NewLine;
+            text += "Description: " + this.Description + Environment.NewLine;
+            text += "Release year: " + this.Year + Environment.NewLine;
+            text += "Excluido: " + this.Excluded;
+            return text;
+        }
+        public string getTitle()
+        {
+            return this.Title;
+        }
+        public int getId()
+        {
+            return this.Id;
         }
     }
 }

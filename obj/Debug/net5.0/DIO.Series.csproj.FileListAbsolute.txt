@@ -1,0 +1,16 @@
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series.deps.json
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series.runtimeconfig.json
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series.runtimeconfig.dev.json
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series.dll
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/ref/DIO.Series.dll
+/home/ricardo/Git/dotnet/DIO.Series/bin/Debug/net5.0/DIO.Series.pdb
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.csprojAssemblyReference.cache
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.GeneratedMSBuildEditorConfig.editorconfig
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.AssemblyInfoInputs.cache
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.AssemblyInfo.cs
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.csproj.CoreCompileInputs.cache
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.dll
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/ref/DIO.Series.dll
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.pdb
+/home/ricardo/Git/dotnet/DIO.Series/obj/Debug/net5.0/DIO.Series.genruntimeconfig.cache
